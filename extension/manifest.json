@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing Domain Detector (MVP)",
+  "version": "1.0",
+  "description": "Checks the domain of the current tab against a phishing-detection backend and warns if it looks like a lookalike/phishing site.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon_unknown.png",
+      "48": "icons/icon_unknown.png",
+      "128": "icons/icon_unknown.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon_unknown.png",
+    "48": "icons/icon_unknown.png",
+    "128": "icons/icon_unknown.png"
+  }
+}
