@@ -4,3 +4,4 @@ rapidfuzz
 imagehash
 pillow
 python-multipart
+playwright
